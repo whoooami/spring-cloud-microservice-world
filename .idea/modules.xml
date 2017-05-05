@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MicroserviceWorld.iml" filepath="$PROJECT_DIR$/MicroserviceWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reservation-client/reservation-client.iml" filepath="$PROJECT_DIR$/reservation-client/reservation-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reservation-service/reservation-service.iml" filepath="$PROJECT_DIR$/reservation-service/reservation-service.iml" />
+    </modules>
+  </component>
+</project>

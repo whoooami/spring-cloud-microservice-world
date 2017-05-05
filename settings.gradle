@@ -1,0 +1,6 @@
+rootProject.name = 'MicroserviceWorld'
+include 'config-service'
+include 'reservation-service'
+include 'eureka-service'
+include 'reservation-client'
+
