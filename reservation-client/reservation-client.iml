@@ -143,5 +143,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: net.minidev:json-smart:2.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.vaadin.external.google:android-json:0.0.20131108.vaadin1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-hateoas:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.hateoas:spring-hateoas:0.23.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" level="project" />
   </component>
 </module>
