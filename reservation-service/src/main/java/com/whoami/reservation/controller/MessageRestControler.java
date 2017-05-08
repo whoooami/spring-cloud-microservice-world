@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessageRestControler{
     @Value("${message}")
     private String message;
-    
+
     @RequestMapping("/message")
     String message(){
         return this.message;
-    }    
+    }
 }
