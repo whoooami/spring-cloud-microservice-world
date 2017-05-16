@@ -1,4 +1,4 @@
-server.port: ${PORT:${SERVER_PORT:0}}
+#server.port: ${PORT:${SERVER_PORT:0}}
 info.id: ${spring.application.name}
 debug: true
 spring.sleuth.log.json.enabled: true

@@ -4,4 +4,5 @@ include 'reservation-service'
 include 'eureka-service'
 include 'reservation-client'
 include 'hystrix-dashboard'
+include 'sms-service'
 
