@@ -1,0 +1,64 @@
+version: "3"
+services:
+  config-service:
+    image: whoami/config:latest
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 200M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "8888:8888"
+    networks:
+      - webnet
+
+  eureka-service:
+    image: whoami/eureka:latest
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 200M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "8761:8761"
+    networks:
+      - webnet
+
+  reservation-service:
+      image: whoami/reservation-service:latest
+      deploy:
+        replicas: 2
+        resources:
+          limits:
+            cpus: "0.1"
+            memory: 200M
+        restart_policy:
+          condition: on-failure
+      ports:
+        - "8000:8000"
+      networks:
+        - webnet
+
+  reservation-client:
+        image: whoami/reservation-client:latest
+        deploy:
+          replicas: 2
+          resources:
+            limits:
+              cpus: "0.1"
+              memory: 200M
+          restart_policy:
+            condition: on-failure
+        ports:
+          - "8050:8050"
+        networks:
+          - webnet
+networks:
+  webnet:
+    driver: overlay
