@@ -1,7 +1,7 @@
 version: "3"
 services:
   config-service:
-    image: whoami/config:latest
+    image: com.nothing.whoami/config-service:0.0.1-SNAPSHOT
     deploy:
       replicas: 2
       resources:
@@ -16,7 +16,7 @@ services:
       - webnet
 
   eureka-service:
-    image: whoami/eureka:latest
+    image: com.nothing.whoami/eureka-service:0.0.1-SNAPSHOT
     deploy:
       replicas: 2
       resources:
@@ -31,7 +31,7 @@ services:
       - webnet
 
   reservation-service:
-      image: whoami/reservation-service:latest
+      image: com.nothing.whoami/reservation-service:0.0.1-SNAPSHOT
       deploy:
         replicas: 2
         resources:
@@ -46,7 +46,7 @@ services:
         - webnet
 
   reservation-client:
-        image: whoami/reservation-client:latest
+        image: com.nothing.whoami/reservation-client:0.0.1-SNAPSHOT
         deploy:
           replicas: 2
           resources:
