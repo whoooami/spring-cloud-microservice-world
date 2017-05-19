@@ -1,0 +1,15 @@
+server:
+  port: 8889
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+
+turbine:
+  appConfig: product,review
+  clusterNameExpression: new String("default")

@@ -1,8 +1,10 @@
 rootProject.name = 'MicroserviceWorld'
-include 'config-service'
+include 'config'
 include 'reservation-service'
-include 'eureka-service'
+include 'discovery'
 include 'reservation-client'
 include 'hystrix-dashboard'
 include 'sms-service'
-
+include 'feign-client'
+include 'gateway'
+include 'turbine'

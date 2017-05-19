@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      uri: http://config:8888
+encrypt:
+  failOnError: false
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/

@@ -1,7 +1,7 @@
 version: "3"
 services:
-  config-service:
-    image: com.nothing.whoami/config-service:0.0.1-SNAPSHOT
+  config:
+    image: com.nothing.whoami/config:0.0.1-SNAPSHOT
     deploy:
       replicas: 2
       resources:

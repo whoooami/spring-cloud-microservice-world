@@ -1,0 +1,14 @@
+server:
+  port: 9001
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+ribbon:
+  eureka:
+    enabled: true
