@@ -42,6 +42,7 @@ dependencies {
     compile('org.springframework.cloud:spring-cloud-starter-zipkin')
     */
     compile('org.springframework.cloud:spring-cloud-starter-zuul')
+    compile('org.springframework.cloud:spring-cloud-starter-feign')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

@@ -3,7 +3,10 @@ spring:
     name: gateway
   cloud:
     config:
-      uri: http://config:8888
+      discovery:
+        service-id: config
+        enabled: true
+#      uri: http://config:8888
 encrypt:
   failOnError: false
 
