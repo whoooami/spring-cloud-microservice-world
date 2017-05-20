@@ -1,5 +1,5 @@
 server:
-  port: 8889
+  port: ${PORT:8889}
 
 eureka:
   instance:
@@ -11,5 +11,5 @@ eureka:
       defaultZone: http://discovery:8761/eureka/
 
 turbine:
-  appConfig: product,review
+  appConfig: reservation-service,reservation-client
   clusterNameExpression: new String("default")

@@ -16,12 +16,9 @@ endpoints:
 zuul:
   ignored-services: "*"
   routes:
-    product:
-      path: /product/**
-      url: http://product:9001/product
-    recommend:
-      path: /recommend/**
-      url: http://recommend:9002/recommend
-    review:
-      path: /review/**
-      url: http://review:9003/review
+    reservation-client:
+      path: /reservation/**
+      service-id: reservation-client
+#    recommend:
+#      path: /recommend/**
+#      url: http://recommend:9002/recommend
