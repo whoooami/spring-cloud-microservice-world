@@ -1,2 +1,14 @@
 server:
-  port: ${PORT:8051}
+  port: ${PORT:8050}
+
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 10000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000

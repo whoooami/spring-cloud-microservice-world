@@ -7,10 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor/monitor.iml" filepath="$PROJECT_DIR$/monitor/monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/reservation-client/reservation-client.iml" filepath="$PROJECT_DIR$/reservation-client/reservation-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/reservation-service/reservation-service.iml" filepath="$PROJECT_DIR$/reservation-service/reservation-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/sms-service/sms-service.iml" filepath="$PROJECT_DIR$/sms-service/sms-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/turbine/turbine.iml" filepath="$PROJECT_DIR$/turbine/turbine.iml" />
     </modules>
   </component>
 </project>

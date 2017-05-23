@@ -12,8 +12,23 @@ endpoints:
   health:
     sensitive: false
 
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 10000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
 
 zuul:
+  host:
+    connect-timeout-millis: 5000
+    socket-timeout-millis: 10000
+  add-host-header: true
   ignored-services: "*"
   routes:
     reservation-client:

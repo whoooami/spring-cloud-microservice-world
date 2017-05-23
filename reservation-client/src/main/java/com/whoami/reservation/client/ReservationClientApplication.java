@@ -32,7 +32,6 @@ import java.util.stream.Collectors;
 
 @Configuration
 @EnableAutoConfiguration
-@EnableZuulProxy
 @EnableDiscoveryClient
 @EnableCircuitBreaker
 @EnableHystrix
