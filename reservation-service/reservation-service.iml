@@ -188,5 +188,11 @@
     <orderEntry type="library" name="Gradle: com.netflix.hystrix:hystrix-javanica:1.5.10" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-afterburner:2.8.8" level="project" />
     <orderEntry type="library" name="Gradle: com.netflix.hystrix:hystrix-serialization:1.5.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-starter-sleuth:1.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-sleuth-zipkin:1.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-sleuth-core:1.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.java:zipkin:1.19.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.reporter:zipkin-reporter:0.6.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.aspectj:aspectjrt:1.8.10" level="project" />
   </component>
 </module>

@@ -7,3 +7,5 @@ include 'hystrix-dashboard'
 include 'sms-service'
 include 'gateway'
 include 'monitor'
+include 'zipkin'
+

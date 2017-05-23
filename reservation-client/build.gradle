@@ -39,10 +39,11 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-hateoas')
     /*
     compile('org.springframework.cloud:spring-cloud-starter-stream-redis')
-    compile('org.springframework.cloud:spring-cloud-starter-zipkin')
     */
     compile('org.springframework.cloud:spring-cloud-starter-zuul')
     compile('org.springframework.cloud:spring-cloud-starter-feign')
+    compile('org.springframework.cloud:spring-cloud-starter-sleuth')
+    compile('org.springframework.cloud:spring-cloud-sleuth-zipkin')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

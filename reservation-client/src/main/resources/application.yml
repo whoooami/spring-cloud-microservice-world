@@ -1,6 +1,10 @@
 server:
   port: ${PORT:8050}
 
+spring:
+  zipkin:
+    base-url: http://zipkin-server:9411
+
 hystrix:
     command:
         default:

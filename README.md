@@ -2,11 +2,14 @@
 ###### Spring cloud microservice example.
 ###### tutorial http://samchu.logdown.com/posts/313414-microservice-with-springcloud
 include module:
+* discovery
+* gateway
 * config
-* eureka-service
 * reservation-service
 * reservation-client
 * hystrix-dashboard
+* monitor
+* zipkin
 
 ### Reference
 1. [Getting started with Spring Cloud by Josh Long](https://www.youtube.com/watch?v=SFDYdslOvu8)
