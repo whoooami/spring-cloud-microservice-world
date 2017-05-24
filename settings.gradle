@@ -8,4 +8,6 @@ include 'sms-service'
 include 'gateway'
 include 'monitor'
 include 'zipkin'
+include 'stream-client'
+include 'stream-service'
 

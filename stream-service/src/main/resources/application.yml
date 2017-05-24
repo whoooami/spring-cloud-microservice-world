@@ -1,11 +1,11 @@
 server:
-  port: ${PORT:9000}
+  port: ${PORT:8030}
 
 spring:
   cloud:
     stream:
       bindings:
-        smsSystemChannel:
+        sms_system_channel:
+          binder: rabbit
           destination: sms.system.exchange
-          contentType: application/json
           group: smsgroup
