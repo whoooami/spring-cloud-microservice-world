@@ -37,6 +37,7 @@ dependencies {
     compile('org.springframework.cloud:spring-cloud-stream')
     compile('org.springframework.cloud:spring-cloud-stream-binder-rabbit')
     compile('org.springframework.cloud:spring-cloud-starter-sleuth')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
