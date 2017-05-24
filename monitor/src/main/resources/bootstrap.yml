@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: monitor
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+#      uri: http://config:8888
+
+encrypt:
+  failOnError: false

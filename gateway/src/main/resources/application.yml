@@ -1,0 +1,39 @@
+server:
+  port: 10000
+
+#sidecar:
+  #port: 8000
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 10000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+zuul:
+  host:
+    connect-timeout-millis: 5000
+    socket-timeout-millis: 10000
+  add-host-header: true
+  ignored-services: "*"
+  routes:
+    reservation-client:
+      path: /reservation/**
+      service-id: reservation-client
+#    recommend:
+#      path: /recommend/**
+#      url: http://recommend:9002/recommend

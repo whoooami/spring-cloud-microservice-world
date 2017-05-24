@@ -1,0 +1,11 @@
+server:
+  port: ${PORT:9000}
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        smsSystemChannel:
+          destination: sms.system.exchange
+          contentType: application/json
+          group: smsgroup

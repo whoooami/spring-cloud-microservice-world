@@ -1,0 +1,11 @@
+server:
+  port: ${PORT:8030}
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        sms_system_channel:
+          binder: rabbit
+          destination: sms.system.exchange
+          group: smsgroup

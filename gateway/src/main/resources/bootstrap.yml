@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    config:
+      discovery:
+        service-id: config
+        enabled: true
+#      uri: http://config:8888
+encrypt:
+  failOnError: false
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
