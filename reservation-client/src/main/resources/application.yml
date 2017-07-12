@@ -3,7 +3,7 @@ server:
 
 spring:
   zipkin:
-    base-url: http://zipkin-server:9411
+    base-url: http://zipkin:9411
 
 hystrix:
     command:
