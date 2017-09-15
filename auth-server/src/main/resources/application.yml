@@ -1,0 +1,6 @@
+server:
+  port: ${PORT:9000}
+
+spring:
+  zipkin:
+    base-url: http://zipkin:9411

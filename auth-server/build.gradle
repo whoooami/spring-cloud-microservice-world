@@ -35,11 +35,10 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.cloud:spring-cloud-starter-config')
     compile('org.springframework.cloud:spring-cloud-starter-eureka')
-    compile('org.springframework.cloud:spring-cloud-starter')
-    compile('org.springframework.cloud:spring-cloud-starter-zuul')
     compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.cloud:spring-cloud-starter-oauth2')
+    compile('org.springframework.cloud:spring-cloud-starter-security')
+//    compile('org.springframework.security.oauth:spring-security-oauth2')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

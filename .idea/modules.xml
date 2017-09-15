@@ -2,18 +2,45 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MicroserviceWorld.iml" filepath="$PROJECT_DIR$/MicroserviceWorld.iml" />
-      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" />
-      <module fileurl="file://$PROJECT_DIR$/monitor/monitor.iml" filepath="$PROJECT_DIR$/monitor/monitor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/reservation-client/reservation-client.iml" filepath="$PROJECT_DIR$/reservation-client/reservation-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/reservation-service/reservation-service.iml" filepath="$PROJECT_DIR$/reservation-service/reservation-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sms-service/sms-service.iml" filepath="$PROJECT_DIR$/sms-service/sms-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/stream-client/stream-client.iml" filepath="$PROJECT_DIR$/stream-client/stream-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/stream-service/stream-service.iml" filepath="$PROJECT_DIR$/stream-service/stream-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zipkin/zipkin.iml" filepath="$PROJECT_DIR$/zipkin/zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MicroserviceWorld.iml" filepath="$PROJECT_DIR$/.idea/modules/MicroserviceWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MicroserviceWorld_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MicroserviceWorld_main.iml" group="MicroserviceWorld" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MicroserviceWorld_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MicroserviceWorld_test.iml" group="MicroserviceWorld" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-server.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-server.iml" group="auth-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-server/auth-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-server/auth-server_main.iml" group="auth-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-server/auth-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-server/auth-server_test.iml" group="auth-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/config.iml" filepath="$PROJECT_DIR$/.idea/modules/config/config.iml" group="config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/config_main.iml" filepath="$PROJECT_DIR$/.idea/modules/config/config_main.iml" group="config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/config_test.iml" filepath="$PROJECT_DIR$/.idea/modules/config/config_test.iml" group="config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery/discovery.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery/discovery.iml" group="discovery" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery/discovery_main.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery/discovery_main.iml" group="discovery" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery/discovery_test.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery/discovery_test.iml" group="discovery" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway/gateway.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway/gateway.iml" group="gateway" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway/gateway_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway/gateway_main.iml" group="gateway" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway/gateway_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway/gateway_test.iml" group="gateway" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/.idea/modules/hystrix-dashboard/hystrix-dashboard.iml" group="hystrix-dashboard" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hystrix-dashboard/hystrix-dashboard_main.iml" filepath="$PROJECT_DIR$/.idea/modules/hystrix-dashboard/hystrix-dashboard_main.iml" group="hystrix-dashboard" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hystrix-dashboard/hystrix-dashboard_test.iml" filepath="$PROJECT_DIR$/.idea/modules/hystrix-dashboard/hystrix-dashboard_test.iml" group="hystrix-dashboard" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/monitor/monitor.iml" filepath="$PROJECT_DIR$/.idea/modules/monitor/monitor.iml" group="monitor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/monitor/monitor_main.iml" filepath="$PROJECT_DIR$/.idea/modules/monitor/monitor_main.iml" group="monitor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/monitor/monitor_test.iml" filepath="$PROJECT_DIR$/.idea/modules/monitor/monitor_test.iml" group="monitor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservation-client/reservation-client.iml" filepath="$PROJECT_DIR$/.idea/modules/reservation-client/reservation-client.iml" group="reservation-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservation-client/reservation-client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/reservation-client/reservation-client_main.iml" group="reservation-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservation-client/reservation-client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/reservation-client/reservation-client_test.iml" group="reservation-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservation-service/reservation-service.iml" filepath="$PROJECT_DIR$/.idea/modules/reservation-service/reservation-service.iml" group="reservation-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservation-service/reservation-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/reservation-service/reservation-service_main.iml" group="reservation-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservation-service/reservation-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/reservation-service/reservation-service_test.iml" group="reservation-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sms-service/sms-service.iml" filepath="$PROJECT_DIR$/.idea/modules/sms-service/sms-service.iml" group="sms-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sms-service/sms-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sms-service/sms-service_main.iml" group="sms-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sms-service/sms-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sms-service/sms-service_test.iml" group="sms-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stream-client/stream-client.iml" filepath="$PROJECT_DIR$/.idea/modules/stream-client/stream-client.iml" group="stream-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stream-client/stream-client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/stream-client/stream-client_main.iml" group="stream-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stream-client/stream-client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/stream-client/stream-client_test.iml" group="stream-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stream-service/stream-service.iml" filepath="$PROJECT_DIR$/.idea/modules/stream-service/stream-service.iml" group="stream-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stream-service/stream-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/stream-service/stream-service_main.iml" group="stream-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stream-service/stream-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/stream-service/stream-service_test.iml" group="stream-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin/zipkin.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin/zipkin.iml" group="zipkin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin/zipkin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin/zipkin_main.iml" group="zipkin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin/zipkin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin/zipkin_test.iml" group="zipkin" />
     </modules>
   </component>
 </project>

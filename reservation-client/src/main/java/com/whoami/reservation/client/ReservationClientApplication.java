@@ -12,6 +12,8 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
@@ -23,6 +25,7 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.hateoas.Resources;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -41,6 +44,7 @@ import java.util.stream.Collectors;
 //@ComponentScan(basePackageClasses = HelloClient.class)
 @EnableFeignClients(basePackages = "com.whoami.reservation")
 @ComponentScan(basePackages = "com.whoami.reservation")
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class ReservationClientApplication {
 
     public static void main(String[] args) {
@@ -51,6 +55,11 @@ public class ReservationClientApplication {
     @LoadBalanced
     public RestTemplate restTemplate() {
         return new RestTemplate();
+    }
+
+    @Bean//必须要有 否则oauth2不可以通过loadbalance获取user
+    LoadBalancerInterceptor loadBalancerInterceptor(LoadBalancerClient loadBalance){
+        return new LoadBalancerInterceptor(loadBalance);
     }
 
     @Bean

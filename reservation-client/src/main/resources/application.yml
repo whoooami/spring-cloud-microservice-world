@@ -16,3 +16,13 @@ hystrix:
 ribbon:
   ReadTimeout: 20000
   ConnectTimeout: 20000
+
+
+security:
+  sessions: stateless
+  oauth2:
+    resource:
+      loadBalanced: true #必须要有 否则获取不到user信息
+      id: reservation-client
+      user-info-uri: http://auth-server/uaa/auth/user # auth-server 是注册到eureka的服务名称
+      prefer-token-info: false # 不使用/oauth/check_token,因为不能负载均衡 使用在auth-server端实现的 /user api.

@@ -34,6 +34,21 @@ zuul:
     reservation-client:
       path: /reservation/**
       service-id: reservation-client
-#    recommend:
-#      path: /recommend/**
-#      url: http://recommend:9002/recommend
+    auth-server:
+      path: /uaa/**
+      serviceId: auth-server
+      sensitiveHeaders:
+#      strip-prefix: false      # add uaa to auth-server path
+
+security:
+  oauth2:
+    client:
+      access-token-uri: http://auth-server/uaa/oauth/token
+      user-authorization-uri: http://auth-server/uaa/oauth/authorize
+      authentication-scheme: form
+#      client-id: webapp
+    resource:
+      user-info-uri: http://auth-server/uaa/user
+      prefer-token-info: false
+  basic:
+    enabled: false

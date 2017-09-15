@@ -10,4 +10,5 @@ include 'monitor'
 include 'zipkin'
 include 'stream-client'
 include 'stream-service'
+include 'auth-server'
 

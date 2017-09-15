@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <resourceExtensions />
-    <wildcardResourcePatterns>
-      <entry name="!?*.java" />
-      <entry name="!?*.form" />
-      <entry name="!?*.class" />
-      <entry name="!?*.groovy" />
-      <entry name="!?*.scala" />
-      <entry name="!?*.flex" />
-      <entry name="!?*.kt" />
-      <entry name="!?*.clj" />
-      <entry name="!?*.aj" />
-    </wildcardResourcePatterns>
-    <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth-server_main" target="1.8" />
+      <module name="auth-server_test" target="1.8" />
+      <module name="config_main" target="1.8" />
+      <module name="config_test" target="1.8" />
+      <module name="discovery_main" target="1.8" />
+      <module name="discovery_test" target="1.8" />
+      <module name="gateway_main" target="1.8" />
+      <module name="gateway_test" target="1.8" />
+      <module name="hystrix-dashboard_main" target="1.8" />
+      <module name="hystrix-dashboard_test" target="1.8" />
+      <module name="MicroserviceWorld_main" target="1.5" />
+      <module name="MicroserviceWorld_test" target="1.5" />
+      <module name="monitor_main" target="1.8" />
+      <module name="monitor_test" target="1.8" />
+      <module name="reservation-client_main" target="1.8" />
+      <module name="reservation-client_test" target="1.8" />
+      <module name="reservation-service_main" target="1.8" />
+      <module name="reservation-service_test" target="1.8" />
+      <module name="sms-service_main" target="1.8" />
+      <module name="sms-service_test" target="1.8" />
+      <module name="stream-client_main" target="1.8" />
+      <module name="stream-client_test" target="1.8" />
+      <module name="stream-service_main" target="1.8" />
+      <module name="stream-service_test" target="1.8" />
+      <module name="zipkin_main" target="1.8" />
+      <module name="zipkin_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
