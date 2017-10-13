@@ -12,8 +12,8 @@
       <module name="gateway_test" target="1.8" />
       <module name="hystrix-dashboard_main" target="1.8" />
       <module name="hystrix-dashboard_test" target="1.8" />
-      <module name="MicroserviceWorld_main" target="1.5" />
-      <module name="MicroserviceWorld_test" target="1.5" />
+      <module name="MicroserviceWorld_main" target="1.8" />
+      <module name="MicroserviceWorld_test" target="1.8" />
       <module name="monitor_main" target="1.8" />
       <module name="monitor_test" target="1.8" />
       <module name="reservation-client_main" target="1.8" />

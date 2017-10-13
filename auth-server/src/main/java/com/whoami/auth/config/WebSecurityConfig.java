@@ -2,6 +2,7 @@ package com.whoami.auth.config;
 
 import com.whoami.auth.security.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.actuate.autoconfigure.ManagementServerProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
@@ -25,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @Configuration
 @EnableWebSecurity
-@Order(-20)
+@Order(ManagementServerProperties.ACCESS_OVERRIDE_ORDER)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //    @Autowired
 //    private DataSource dataSource;
@@ -36,7 +37,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .inMemoryAuthentication()
                 .withUser("whoami").password("123456").roles("USER", "ADMIN")
                 .and()
-                .withUser("noting").password("123456").roles("USER");
+                .withUser("nothing").password("123456").roles("USER");
 //                .jdbcAuthentication()
 //                .dataSource(dataSource);//设置为从数据库读取用户认证信息(JdbcUserdetailsService)
     }

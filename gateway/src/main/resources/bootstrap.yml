@@ -6,15 +6,19 @@ spring:
       discovery:
         service-id: config
         enabled: true
+  aop:
+    proxy-target-class: true
 #      uri: http://config:8888
 encrypt:
   failOnError: false
 
 eureka:
   instance:
-    preferIpAddress: true
+    hostname: localhost
+    port: 8761
+#    preferIpAddress: true
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/

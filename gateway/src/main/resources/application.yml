@@ -28,8 +28,8 @@ zuul:
   host:
     connect-timeout-millis: 5000
     socket-timeout-millis: 10000
-  add-host-header: true
-  ignored-services: "*"
+#  add-host-header: true
+#  ignored-services: "*"
   routes:
     reservation-client:
       path: /reservation/**
@@ -39,16 +39,36 @@ zuul:
       serviceId: auth-server
       sensitiveHeaders:
 #      strip-prefix: false      # add uaa to auth-server path
+  add-proxy-headers: true
 
 security:
   oauth2:
     client:
       access-token-uri: http://auth-server/uaa/oauth/token
-      user-authorization-uri: http://auth-server/uaa/oauth/authorize
-      authentication-scheme: form
-#      client-id: webapp
+      user-authorization-uri: /uaa/oauth/authorize
+#      authentication-scheme: form
+      client-id: whoami
+      client-secret: 123456
     resource:
-      user-info-uri: http://auth-server/uaa/user
-      prefer-token-info: false
+      jwt:
+        keyValue: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArmjeeGOXlX3KHMKyhOTc
+          C8MwpBTWia/Cozn7HLs1bFviSbGYKuX+wRm4UQ/9zZId3Wb4uWByCbUj/YkiJRb3
+          fIknd3CYf9aH1o8sMNLW33gE1t4Qj3uqx7ezcUsGtve1YnP7ZTcWHhZIyO1JTpga
+          wVet0JoPq0LAqbRRZsQ9drbs+rZ+rito8GB1szFfjHytkLY+3g3Q19G7mlHwprFF
+          +iO2epU//Gk6HbVs39SmyixYp9Q+rZHMCXjO1BWkOlLA6RIlcXzYTlwlTWJ4GfB3
+          Knt+zUm5jN6r3Mk2JD+XZr0cCO/ZqZUIkZPFugMtzEJAiTyd+0KlGs6dXldSz6gK
+          PQIDAQAB
+          -----END PUBLIC KEY-----
+      id: app
+      serviceId: ${PREFIX:}resource
+# no jwt...
+#      user-info-uri: http://auth-server/uaa/user
+#      prefer-token-info: false
+# ...
+
+    sso:
+      login-path: /uaa/login
   basic:
     enabled: false

@@ -2,8 +2,8 @@ server:
   port: ${PORT:8889}
 
 eureka:
-  instance:
-    preferIpAddress: true
+#  instance:
+#    preferIpAddress: true
   client:
     registerWithEureka: true
     fetchRegistry: true

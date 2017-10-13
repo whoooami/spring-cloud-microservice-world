@@ -20,8 +20,8 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-actuator:1.5.3.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: io.zipkin.java:zipkin-server:1.19.2" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:1.5.3.RELEASE" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.zipkin.java:zipkin-autoconfigure-ui:1.19.2" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.zipkin.java:zipkin-autoconfigure-ui:1.19.2" level="project" />
     <orderEntry type="library" name="Gradle: net.minidev:json-smart:2.2.1" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.5.3.RELEASE" level="project" />
